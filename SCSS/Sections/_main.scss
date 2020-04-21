@@ -1,0 +1,19 @@
+@import "../Common/variables";
+
+#main{
+    background-color:$color_5;
+    h2{
+        text-align: center;
+        margin: 0;
+        padding:$padding-xl 0 $padding-xl 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: $regular-font;
+        font-size: $m-font;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

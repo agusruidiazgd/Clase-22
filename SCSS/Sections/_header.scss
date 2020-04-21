@@ -1,0 +1,32 @@
+@import "../Common/variables";
+
+#header{
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: $padding-xl;
+    padding-right: $padding-xl;
+    border-bottom: 1px solid $color_6;
+    font-family: 'Roboto', sans-serif;
+    h1{
+        color:black;
+        font-size: $m-font;
+    }
+    .link{
+        a{
+            padding-left: $padding-l;
+            text-decoration: $link-text;
+            color:$color_2;
+            font-size: $s-font;
+            transition-property:all;
+            transition-duration: 0.3s;
+            //ver que ondaaaaaaaaaaaaaaaaaaa
+            &:hover{
+                color:$color_3;
+                font-weight: $regular-font;
+            }
+        }
+
+    }
+}
