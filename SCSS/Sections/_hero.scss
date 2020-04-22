@@ -3,31 +3,47 @@
 #hero{
     padding-left: $padding-xl;
     padding-right: $padding-xl;
-    height: 80px;
+    height: 50px;
     border-bottom: 1px solid $color_6;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family:  'Roboto', sans-serif;;
+    font-family:  'Roboto', sans-serif;
+    @include breakpoint-mobile-1{
+        height: 80px;
+    }
     .link2{
-        a{
-            padding-right: $padding-s;
-            text-decoration: $link-text;
-            color:$color_2;
-            font-size: calc($m-font-3);
-            &:hover{
-                color:$color_3;
+        display: none;
+        @include breakpoint-mobile-1{
+            display: block;
+            a{
+                padding-right: $padding-s;
+                text-decoration: $link-text;
+                color:$color_2;
+                font-size: calc($m-font-3);
+                &:hover{
+                    color:$color_3;
+                }
             }
         }
+        
     }
     div{
         .fas{
-            color:$color_2;
+            color:crimson;
             font-size: calc($m-font+3);
             padding-right: $padding-s;
             cursor: pointer;
-            &:hover{
-                color:black;
+        }
+        @include breakpoint-mobile-1{
+            .fas{
+                color:$color_2;
+                font-size: calc($m-font+3);
+                padding-right: $padding-s;
+                cursor: pointer;
+                &:hover{
+                    color:$color_3;
+                }
             }
         }
     }

@@ -1,7 +1,8 @@
 @import "../Common/variables";
+@import "../Common/mixins";
 
 #header{
-    height: 80px;
+    height: 60px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -14,19 +15,30 @@
         font-size: $m-font;
     }
     .link{
-        a{
-            padding-left: $padding-l;
-            text-decoration: $link-text;
-            color:$color_2;
-            font-size: $s-font;
-            transition-property:all;
-            transition-duration: 0.3s;
-            //ver que ondaaaaaaaaaaaaaaaaaaa
-            &:hover{
-                color:$color_3;
-                font-weight: $regular-font;
+        display: none;
+        @include breakpoint-mobile-1{
+            display: block;
+            a{
+                padding-left: $padding-l;
+                text-decoration: $link-text;
+                color:$color_2;
+                font-size: $s-font;
+                transition-property:all;
+                transition-duration: 0.3s;
+                &:hover{
+                    color:$color_3;
+                    font-weight: $regular-font;
+                }
             }
         }
-
+       
+    }
+    .fas{
+        &.fa-hamburger{
+            color: crimson;
+            @include breakpoint-mobile-1{
+                display: none;
+            }
+        }
     }
 }

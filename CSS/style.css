@@ -1,5 +1,5 @@
 #header {
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,40 +10,64 @@
   #header h1 {
     color: black;
     font-size: 18; }
-  #header .link a {
-    padding-left: 25px;
-    text-decoration: none;
-    color: grey;
-    font-size: 12;
-    transition-property: all;
-    transition-duration: 0.3s; }
-    #header .link a:hover {
-      color: #69c9fc;
-      font-weight: 400; }
+  #header .link {
+    display: none; }
+    @media (min-width: 650px) {
+      #header .link {
+        display: block; }
+        #header .link a {
+          padding-left: 25px;
+          text-decoration: none;
+          color: grey;
+          font-size: 12;
+          transition-property: all;
+          transition-duration: 0.3s; }
+          #header .link a:hover {
+            color: #69c9fc;
+            font-weight: 400; } }
+  #header .fas.fa-hamburger {
+    color: crimson; }
+    @media (min-width: 650px) {
+      #header .fas.fa-hamburger {
+        display: none; } }
 
 #hero {
   padding-left: 35px;
   padding-right: 35px;
-  height: 80px;
+  height: 50px;
   border-bottom: 1px solid #d6d6d8;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Roboto', sans-serif; }
-  #hero .link2 a {
-    padding-right: 10px;
-    text-decoration: none;
-    color: grey;
-    font-size: calc($m-font-3); }
-    #hero .link2 a:hover {
-      color: #69c9fc; }
+  @media (min-width: 650px) {
+    #hero {
+      height: 80px; } }
+  #hero .link2 {
+    display: none; }
+    @media (min-width: 650px) {
+      #hero .link2 {
+        display: block; }
+        #hero .link2 a {
+          padding-right: 10px;
+          text-decoration: none;
+          color: grey;
+          font-size: calc($m-font-3); }
+          #hero .link2 a:hover {
+            color: #69c9fc; } }
   #hero div .fas {
-    color: grey;
+    color: crimson;
     font-size: calc($m-font+3);
     padding-right: 10px;
     cursor: pointer; }
-    #hero div .fas:hover {
-      color: black; }
+  @media (min-width: 650px) {
+    #hero div .fas {
+      color: grey;
+      font-size: calc($m-font+3);
+      padding-right: 10px;
+      cursor: pointer; }
+      #hero div .fas:hover {
+        color: #69c9fc; } }
 
 #main {
   background-color: #e7f1f3; }
@@ -168,3 +192,6 @@
     background-color: #68b4e4;
     color: white;
     outline: none; }
+
+body {
+  margin: 0; }
