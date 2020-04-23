@@ -54,7 +54,12 @@
           color: grey;
           font-size: calc($m-font-3); }
           #hero .link2 a:hover {
-            color: #69c9fc; } }
+            color: #69c9fc;
+            position: absolute;
+            top: 130px;
+            left: 240px;
+            bottom: auto;
+            right: auto; } }
   #hero div .fas {
     color: crimson;
     font-size: calc($m-font+3);
@@ -68,6 +73,22 @@
       cursor: pointer; }
       #hero div .fas:hover {
         color: #69c9fc; } }
+  #hero .prueba-mxn p {
+    text-decoration: none;
+    background-color: white;
+    color: #202020;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #d6d6d8;
+    padding: 7px;
+    margin: 0;
+    transition: .5s;
+    cursor: pointer; }
+    #hero .prueba-mxn p:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      background-color: #51a851;
+      border: none;
+      color: white; }
 
 #main {
   background-color: #e7f1f3; }

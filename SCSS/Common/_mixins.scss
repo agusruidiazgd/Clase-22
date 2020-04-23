@@ -3,3 +3,16 @@
         @content;
     }
 }
+
+//tarea pruebas de mixin
+@mixin float-1{
+    @content;
+}
+
+@mixin position ($var-1,$var-2){
+    position: absolute;
+    top: $var-1;
+    left: $var-2;
+    bottom: auto;
+    right: auto; 
+}

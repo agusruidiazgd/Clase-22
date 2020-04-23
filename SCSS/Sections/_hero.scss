@@ -23,6 +23,8 @@
                 font-size: calc($m-font-3);
                 &:hover{
                     color:$color_3;
+                    //prueba de tarea
+                    @include position(130px,240px)
                 }
             }
         }
@@ -44,6 +46,26 @@
                 &:hover{
                     color:$color_3;
                 }
+            }
+        }
+    }
+    .prueba-mxn p{
+        text-decoration: $link-text;
+        background-color: $color_7;
+        color:rgb(32, 32, 32);
+        border-radius: 15px 15px 15px 15px;
+        border: 1px solid $color_6;
+        padding: $padding-ss;
+        margin: 0;
+        @include float-1{
+            transition: .5s;
+            cursor: pointer;
+            &:hover{
+                transform: translateY(-20px);
+                box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+                background-color:rgb(81, 168, 81) ;
+                border: none;
+                color:$color_7;
             }
         }
     }
