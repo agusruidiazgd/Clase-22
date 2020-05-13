@@ -5,10 +5,13 @@
     h2{
         text-align: center;
         margin: 0;
-        padding:$padding-xl 0 $padding-xl 0;
+        padding:$padding-s 0 $padding-s 0;
         font-family: 'Roboto', sans-serif;
         font-weight: $regular-font;
         font-size: $m-font;
+        @include breakpoint-mobile-1{
+            padding:$padding-xl 0 $padding-xl 0;
+        }
     }
     .container{
         display: flex;

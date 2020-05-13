@@ -36,6 +36,11 @@
             font-size: calc($m-font+3);
             padding-right: $padding-s;
             cursor: pointer;
+            //rotacion de iconos
+            transition: transform 0.9s;
+            &:hover{
+                transform: rotate(360deg);
+            }
         }
         @include breakpoint-mobile-1{
             .fas{

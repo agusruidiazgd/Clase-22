@@ -26,7 +26,10 @@
             color: #69c9fc;
             font-weight: 400; } }
   #header .fas.fa-hamburger {
-    color: crimson; }
+    color: crimson;
+    transition: transform 0.9s; }
+    #header .fas.fa-hamburger:hover {
+      transform: rotate(360deg); }
     @media (min-width: 650px) {
       #header .fas.fa-hamburger {
         display: none; } }
@@ -64,7 +67,10 @@
     color: crimson;
     font-size: calc($m-font+3);
     padding-right: 10px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: transform 0.9s; }
+    #hero div .fas:hover {
+      transform: rotate(360deg); }
   @media (min-width: 650px) {
     #hero div .fas {
       color: grey;
@@ -95,10 +101,13 @@
   #main h2 {
     text-align: center;
     margin: 0;
-    padding: 35px 0 35px 0;
+    padding: 10px 0 10px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18; }
+    @media (min-width: 650px) {
+      #main h2 {
+        padding: 35px 0 35px 0; } }
   #main .container {
     display: flex;
     flex-wrap: wrap;

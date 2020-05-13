@@ -36,6 +36,10 @@
     .fas{
         &.fa-hamburger{
             color: crimson;
+            transition: transform 0.9s;
+            &:hover{
+                transform: rotate(360deg);
+            }
             @include breakpoint-mobile-1{
                 display: none;
             }
